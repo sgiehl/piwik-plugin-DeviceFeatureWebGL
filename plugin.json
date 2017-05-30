@@ -1,0 +1,29 @@
+{
+  "name": "DevicePluginWebGL",
+  "version": "1.0.0",
+  "description": "This plugin allows you to track browser compatibility for WebGL",
+  "keywords": ["webgl"],
+  "license": "GPL v3+",
+  "homepage": "http://github.com/sgiehl/piwik-plugin-DevicePluginWebGL",
+  "require": {
+    "piwik": ">=3.0.4-b1,<4.0.0-b1",
+    "php": ">=5.5.0"
+  },
+  "archive": {
+    "exclude": [
+      "\/tracker.js"
+    ]
+  },
+  "authors": [
+    {
+      "name": "Stefan Giehl",
+      "email": "stefan@piwik.org",
+      "homepage": "http://github.com/sgiehl"
+    }
+  ],
+  "donate": {
+    "paypal": "stefangiehl@web.de",
+    "flattr": "https://flattr.com/thing/2578144/sgiehl",
+    "bitcoin": "1NxyWNfsjSNQULGxPVJUkgf8D3rpdJEgM6"
+  }
+}
