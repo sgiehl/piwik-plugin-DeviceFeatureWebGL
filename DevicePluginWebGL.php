@@ -22,11 +22,14 @@ class DevicePluginWebGL extends Plugin
     public function registerEvents()
     {
         return array(
-            'API.DevicePlugins.getPlugin.end'            => 'setWebGLLogo',
+            'API.DevicePlugins.getPlugin.end' => 'setWebGLTitle',
         );
     }
 
-    public function setWebGLLogo($dataTable)
+    /**
+     * @param $dataTable
+     */
+    public function setWebGLTitle($dataTable)
     {
         $dataTables = array();
         if ($dataTable instanceof DataTable\Map) {
@@ -41,7 +44,6 @@ class DevicePluginWebGL extends Plugin
                 $row = $dataTable->getRowFromLabel('Webgl');
                 if ($row) {
                     $row->setColumn('label', 'WebGL');
-                    $row->setMetadata('logo', 'plugins/DevicePluginWebGL/images/webgl.png');
                 }
             });
         }
