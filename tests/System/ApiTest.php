@@ -7,13 +7,13 @@
  *
  * Based on code from AdvancedCampaignReporting plugin by Piwik PRO released under GPL v3 or later: https://github.com/PiwikPRO/plugin-AdvancedCampaignReporting
  */
-namespace Piwik\Plugins\DevicePluginWebGL\tests\System;
+namespace Piwik\Plugins\DeviceFeatureWebGL\tests\System;
 
-use Piwik\Plugins\DevicePluginWebGL\tests\Fixtures\ManyVisitsWithWebGL;
+use Piwik\Plugins\DeviceFeatureWebGL\tests\Fixtures\ManyVisitsWithWebGL;
 use Piwik\Tests\Framework\TestCase\SystemTestCase;
 
 /**
- * @group DevicePluginWebGL
+ * @group DeviceFeatureWebGL
  * @group Plugins
  */
 class ApiTest extends SystemTestCase

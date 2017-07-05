@@ -27,7 +27,7 @@
             return;
         }
 
-        Piwik.addPlugin('DevicePluginWebGL', {
+        Piwik.addPlugin('DeviceFeatureWebGL', {
             log: function () {
 
                 var canvas = document.createElement('canvas');

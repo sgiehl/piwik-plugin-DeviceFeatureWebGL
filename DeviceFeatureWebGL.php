@@ -6,7 +6,7 @@
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  *
  */
-namespace Piwik\Plugins\DevicePluginWebGL;
+namespace Piwik\Plugins\DeviceFeatureWebGL;
 
 use Piwik\DataTable;
 use Piwik\Plugin;
@@ -14,7 +14,7 @@ use Piwik\Plugin;
 /**
  *
  */
-class DevicePluginWebGL extends Plugin
+class DeviceFeatureWebGL extends Plugin
 {
     /**
      * @see Plugin::registerEvents

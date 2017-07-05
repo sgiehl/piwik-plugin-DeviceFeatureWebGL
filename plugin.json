@@ -1,10 +1,10 @@
 {
-  "name": "DevicePluginWebGL",
+  "name": "DeviceFeatureWebGL",
   "version": "1.0.1",
   "description": "This plugin allows you to track browser compatibility for WebGL",
   "keywords": ["webgl"],
   "license": "GPL v3+",
-  "homepage": "http://github.com/sgiehl/piwik-plugin-DevicePluginWebGL",
+  "homepage": "http://github.com/sgiehl/piwik-plugin-DeviceFeatureWebGL",
   "require": {
     "piwik": ">=3.0.5-b1,<4.0.0-b1",
     "php": ">=5.5.0"

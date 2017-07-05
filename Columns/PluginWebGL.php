@@ -6,7 +6,7 @@
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  *
  */
-namespace Piwik\Plugins\DevicePluginWebGL\Columns;
+namespace Piwik\Plugins\DeviceFeatureWebGL\Columns;
 
 use Piwik\Common;
 use Piwik\Plugins\DevicePlugins\Columns\DevicePluginColumn;
@@ -18,7 +18,7 @@ class PluginWebGL extends DevicePluginColumn
 {
     protected $columnName = 'config_webgl';
     protected $columnType = 'TINYINT(1) NULL';
-    public $columnIcon = 'plugins/DevicePluginWebGL/images/webgl.png';
+    public $columnIcon = 'plugins/DeviceFeatureWebGL/images/webgl.png';
 
     /**
      * @param Request $request
