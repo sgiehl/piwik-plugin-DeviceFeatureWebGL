@@ -1,6 +1,6 @@
 {
   "name": "DevicePluginWebGL",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This plugin allows you to track browser compatibility for WebGL",
   "keywords": ["webgl"],
   "license": "GPL v3+",
