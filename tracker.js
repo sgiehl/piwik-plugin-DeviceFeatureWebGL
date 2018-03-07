@@ -17,11 +17,6 @@
 (function () {
 
     function init() {
-        if ('object' === typeof window && 'object' === typeof window.Piwik) {
-            // do not initialize twice
-            return;
-        }
-
         if ('object' === typeof window && !window.Piwik) {
             // piwik is not defined yet
             return;
