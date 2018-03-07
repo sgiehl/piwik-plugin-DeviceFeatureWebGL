@@ -1,15 +1,15 @@
-# Piwik Device Plugin WebGL
+# Matomo Device Plugin WebGL
 
-[![Build Status](https://travis-ci.org/sgiehl/piwik-plugin-DeviceFeatureWebGL.png?branch=master)](https://travis-ci.org/sgiehl/piwik-plugin-ReferrersManager) [![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=sgiehl&url=https://github.com/sgiehl/piwik-plugin-DeviceFeatureWebGL&title=Piwik%20Device%20Plugin%20WebGL&language=&tags=github&category=software) 
+[![Build Status](https://travis-ci.org/sgiehl/piwik-plugin-DeviceFeatureWebGL.png?branch=master)](https://travis-ci.org/sgiehl/piwik-plugin-ReferrersManager) [![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=sgiehl&url=https://github.com/sgiehl/piwik-plugin-DeviceFeatureWebGL&title=Matomo%20Device%20Plugin%20WebGL&language=&tags=github&category=software) 
 
 
 ## Description
 
-This plugin adds browser plugin detection for WebGL to the already exisiting browser plugin reports in Piwik
+This plugin adds browser plugin detection for WebGL to the already exisiting browser plugin reports in Matomo
 
 ### Requirements
 
-[Piwik](https://github.com/piwik/piwik) 3.0.5-b1 or higher is required.
+[Matomo](https://github.com/matomo-org/matomo) 3.0.5-b1 or higher is required.
 
 ### Features
 
@@ -17,7 +17,7 @@ This plugin adds browser plugin detection for WebGL to the already exisiting bro
 
 ## Support
 
-Please direct any feedback to [stefan@piwik.org](mailto:stefan@piwik.org)
+Please direct any feedback to [stefan@matomo.org](mailto:stefan@matomo.org)
 
 ## Contribute
 
