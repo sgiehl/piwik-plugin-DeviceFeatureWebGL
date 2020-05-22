@@ -1,6 +1,6 @@
 {
   "name": "DeviceFeatureWebGL",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This plugin allows you to track browser compatibility for WebGL",
   "keywords": ["webgl"],
   "license": "GPL v3+",
@@ -23,7 +23,6 @@
   ],
   "donate": {
     "paypal": "stefangiehl@web.de",
-    "flattr": "https://flattr.com/thing/2578144/sgiehl",
-    "bitcoin": "1NxyWNfsjSNQULGxPVJUkgf8D3rpdJEgM6"
+    "flattr": "https://flattr.com/thing/2578144/sgiehl"
   }
 }
