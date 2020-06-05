@@ -21,9 +21,9 @@ class DeviceFeatureWebGL extends Plugin
      */
     public function registerEvents()
     {
-        return array(
+        return [
             'API.DevicePlugins.getPlugin.end' => 'setWebGLTitle',
-        );
+        ];
     }
 
     /**
@@ -31,12 +31,12 @@ class DeviceFeatureWebGL extends Plugin
      */
     public function setWebGLTitle($dataTable)
     {
-        $dataTables = array();
+        $dataTables = [];
         if ($dataTable instanceof DataTable\Map) {
             $dataTables = $dataTable->getDataTables();
         }
          else if ($dataTable instanceof DataTable) {
-            $dataTables = array($dataTable);
+            $dataTables = [$dataTable];
         }
 
         foreach ($dataTables as $table) {

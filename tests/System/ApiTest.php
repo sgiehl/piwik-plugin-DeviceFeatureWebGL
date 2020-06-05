@@ -44,19 +44,19 @@ class ApiTest extends SystemTestCase
 
     public function getApiForTesting()
     {
-        $dateTime              = self::$fixture->dateTime;
+        $dateTime    = self::$fixture->dateTime;
 
-        $api         = array(
+        $api         = [
             'DevicePlugins'
-        );
-        $apiToTest[] = array(
+        ];
+        $apiToTest[] = [
             $api,
-            array(
+            [
                 'idSite'                 => self::$fixture->idSite,
                 'date'                   => $dateTime,
-                'periods'                => array('day'),
-            )
-        );
+                'periods'                => ['day'],
+            ]
+        ];
 
         return $apiToTest;
     }

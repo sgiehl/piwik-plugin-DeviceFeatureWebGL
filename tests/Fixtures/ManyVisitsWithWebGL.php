@@ -12,19 +12,8 @@ use Piwik\Tests\Framework\Fixture;
 
 class ManyVisitsWithWebGL extends Fixture
 {
-    public $idSite = 1;
+    public $idSite   = 1;
     public $dateTime = '2010-01-03 06:22:33';
-
-    public $userAgents = array(
-        'Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.136 Mobile Safari/537.36',
-        'Mozilla/5.0 (Linux; U; Android 2.3.7; fr-fr; HTC Desire Build/GRI40; MildWild CM-8.0 JG Stable) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
-        'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
-        'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; GTB6.3; Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1) ; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; OfficeLiveConnector.1.4; OfficeLivePatch.1.3)',
-        'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MDDSJS; rv:11.0) like Gecko',
-        'Mozilla/5.0 (Linux; Android 4.1.1; SGPT13 Build/TJDS0170) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Safari/537.36',
-        'Mozilla/5.0 (Linux; U; Android 4.3; zh-cn; SM-N9006 Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.0 Mobile Safari/537.36',
-        'Mozilla/5.0 (X11; U; Linux i686; ru; rv:1.9.0.14) Gecko/2009090216 Ubuntu/9.04 (jaunty) Firefox/3.0.14'
-    );
 
     public function setUp(): void
     {
@@ -46,7 +35,7 @@ class ManyVisitsWithWebGL extends Fixture
         $calledCounter++;
 
         $dateTime = $this->dateTime;
-        $idSite = $this->idSite;
+        $idSite   = $this->idSite;
 
         $t = self::getTracker($idSite, $dateTime);
         $t->setTokenAuth(self::getTokenAuth());
@@ -85,7 +74,7 @@ class ManyVisitsWithWebGL extends Fixture
     private function trackOtherVisits()
     {
         $dateTime = $this->dateTime;
-        $idSite = $this->idSite;
+        $idSite   = $this->idSite;
 
         $t = self::getTracker($idSite, $dateTime, $defaultInit = true);
         $t->setVisitorId('fed33392d3a48ab2');

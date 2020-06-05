@@ -18,7 +18,7 @@ class PluginWebGL extends DevicePluginColumn
 {
     protected $columnName = 'config_webgl';
     protected $columnType = 'TINYINT(1) NULL';
-    public $columnIcon = 'plugins/DeviceFeatureWebGL/images/webgl.png';
+    public $columnIcon    = 'plugins/DeviceFeatureWebGL/images/webgl.png';
 
     /**
      * @param Request $request
