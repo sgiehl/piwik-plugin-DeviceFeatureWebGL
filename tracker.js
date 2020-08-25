@@ -14,12 +14,12 @@
 (function () {
 
     function init() {
-        if ('object' === typeof window && !window.Piwik) {
-            // piwik is not defined yet
+        if ('object' === typeof window && !window.Matomo) {
+            // Matomo is not defined yet
             return;
         }
 
-        Piwik.addPlugin('DeviceFeatureWebGL', {
+        Matomo.addPlugin('DeviceFeatureWebGL', {
             log: function () {
 
                 var canvas = document.createElement('canvas');
@@ -42,15 +42,15 @@
         });
     }
 
-    if ('object' === typeof window.Piwik) {
+    if ('object' === typeof window.Matomo) {
         init();
     } else {
         // tracker is loaded separately for sure
-        if ('object' !== typeof window.piwikPluginAsyncInit) {
-            window.piwikPluginAsyncInit = [];
+        if ('object' !== typeof window.matomoPluginAsyncInit) {
+            window.matomoPluginAsyncInit = [];
         }
 
-        window.piwikPluginAsyncInit.push(init);
+        window.matomoPluginAsyncInit.push(init);
     }
 
 })();
