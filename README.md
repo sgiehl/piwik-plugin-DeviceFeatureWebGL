@@ -1,6 +1,6 @@
 # Matomo Device Plugin WebGL
 
-[![Build Status](https://travis-ci.org/sgiehl/piwik-plugin-DeviceFeatureWebGL.png?branch=4.x-dev)](https://travis-ci.org/sgiehl/piwik-plugin-DeviceFeatureWebGL) [![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=sgiehl&url=https://github.com/sgiehl/piwik-plugin-DeviceFeatureWebGL&title=Matomo%20Device%20Plugin%20WebGL&language=&tags=github&category=software) 
+[![Build Status](https://travis-ci.com/sgiehl/piwik-plugin-DeviceFeatureWebGL.png?branch=4.x-dev)](https://travis-ci.com/sgiehl/piwik-plugin-DeviceFeatureWebGL) [![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=sgiehl&url=https://github.com/sgiehl/piwik-plugin-DeviceFeatureWebGL&title=Matomo%20Device%20Plugin%20WebGL&language=&tags=github&category=software) 
 
 
 ## Description
