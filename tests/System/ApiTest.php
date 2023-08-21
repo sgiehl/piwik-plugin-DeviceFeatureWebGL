@@ -1,11 +1,10 @@
 <?php
+
 /**
  * Matomo - free/libre analytics platform
  *
- * @link https://matomo.org
+ * @link    https://matomo.org
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
- *
- * Based on code from AdvancedCampaignReporting plugin by Piwik PRO released under GPL v3 or later: https://github.com/PiwikPRO/plugin-AdvancedCampaignReporting
  */
 
 namespace Piwik\Plugins\DeviceFeatureWebGL\tests\System;
@@ -45,18 +44,18 @@ class ApiTest extends SystemTestCase
 
     public function getApiForTesting()
     {
-        $dateTime    = self::$fixture->dateTime;
+        $dateTime = self::$fixture->dateTime;
 
         $api         = [
-            'DevicePlugins'
+            'DevicePlugins',
         ];
         $apiToTest[] = [
             $api,
             [
-                'idSite'                 => self::$fixture->idSite,
-                'date'                   => $dateTime,
-                'periods'                => ['day'],
-            ]
+                'idSite'  => self::$fixture->idSite,
+                'date'    => $dateTime,
+                'periods' => ['day'],
+            ],
         ];
 
         return $apiToTest;

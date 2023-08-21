@@ -1,15 +1,14 @@
 # Matomo Device Plugin WebGL
 
-[![Build Status](https://travis-ci.com/sgiehl/piwik-plugin-DeviceFeatureWebGL.png?branch=4.x-dev)](https://travis-ci.com/sgiehl/piwik-plugin-DeviceFeatureWebGL) [![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=sgiehl&url=https://github.com/sgiehl/piwik-plugin-DeviceFeatureWebGL&title=Matomo%20Device%20Plugin%20WebGL&language=&tags=github&category=software) 
-
+[![Plugin DeviceFeatureWebGL Tests](https://github.com/sgiehl/piwik-plugin-DeviceFeatureWebGL/actions/workflows/matomo-tests.yml/badge.svg)](https://github.com/sgiehl/piwik-plugin-DeviceFeatureWebGL/actions/workflows/matomo-tests.yml)
 
 ## Description
 
-This plugin adds browser plugin detection for WebGL to the already exisiting browser plugin reports in Matomo
+This plugin adds browser plugin detection for WebGL to the already existing browser plugin reports in Matomo
 
 ### Requirements
 
-[Matomo](https://github.com/matomo-org/matomo) 3.0.5-b1 or higher is required.
+[Matomo](https://github.com/matomo-org/matomo) 5.0.0-b1 or higher is required.
 
 ### Features
 

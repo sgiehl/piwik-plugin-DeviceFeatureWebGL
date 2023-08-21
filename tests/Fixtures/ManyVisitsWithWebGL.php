@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Matomo - free/libre analytics platform
  *
@@ -13,7 +14,7 @@ use Piwik\Tests\Framework\Fixture;
 
 class ManyVisitsWithWebGL extends Fixture
 {
-    public $idSite   = 1;
+    public $idSite = 1;
     public $dateTime = '2010-01-03 06:22:33';
 
     public function setUp(): void
@@ -41,14 +42,14 @@ class ManyVisitsWithWebGL extends Fixture
         $t = self::getTracker($idSite, $dateTime);
         $t->setTokenAuth(self::getTokenAuth());
         for ($i = 0; $i != $visitorCount; ++$i) {
-            $t->setVisitorId( substr(md5($i + $calledCounter * 1000), 0, $t::LENGTH_VISITOR_ID));
+            $t->setVisitorId(substr(md5($i + $calledCounter * 1000), 0, $t::LENGTH_VISITOR_ID));
             $t->setIp("1.2.4.$i");
 
             // first visit
             $date = Date::factory($dateTime)->addHour($i);
             $t->setForceVisitDateTime($date->getDatetime());
             $t->setUrl("http://piwik.net/grue/lair");
-            $t->setCustomTrackingParameter('webgl', $i%2);
+            $t->setCustomTrackingParameter('webgl', $i % 2);
 
             $r = $t->doTrackPageView('Any site tracked');
             self::checkResponse($r);
@@ -56,7 +57,7 @@ class ManyVisitsWithWebGL extends Fixture
             // second visit
             $date = $date->addHour(1);
             $t->setForceVisitDateTime($date->getDatetime());
-            $t->setCustomTrackingParameter('webgl', $i%3);
+            $t->setCustomTrackingParameter('webgl', $i % 3);
             $t->setUrl("http://piwik.net/space/quest/iv");
 
             // Manually record some data
@@ -92,7 +93,9 @@ class ManyVisitsWithWebGL extends Fixture
         $t->setCustomTrackingParameter('webgl', '1');
         $t->setUrl("http://piwik.net/grue/lair");
         $t->setUrlReferrer('http://google.com/?q=Wikileaks FTW');
-        $t->setUserAgent("Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.2.6) AppleWebKit/522+ (KHTML, like Gecko) Safari/419.3 (.NET CLR 3.5.30729)");
+        $t->setUserAgent(
+            "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.2.6) AppleWebKit/522+ (KHTML, like Gecko) Safari/419.3 (.NET CLR 3.5.30729)"
+        );
         self::checkResponse($t->doTrackPageView('It\'s pitch black...'));
     }
 }

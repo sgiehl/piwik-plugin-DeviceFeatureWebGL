@@ -1,10 +1,10 @@
 <?php
+
 /**
  * Matomo - free/libre analytics platform
  *
- * @link https://matomo.org
+ * @link    https://matomo.org
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
- *
  */
 
 namespace Piwik\Plugins\DeviceFeatureWebGL;
@@ -35,13 +35,14 @@ class DeviceFeatureWebGL extends Plugin
         $dataTables = [];
         if ($dataTable instanceof DataTable\Map) {
             $dataTables = $dataTable->getDataTables();
-        }
-         else if ($dataTable instanceof DataTable) {
-            $dataTables = [$dataTable];
+        } else {
+            if ($dataTable instanceof DataTable) {
+                $dataTables = [$dataTable];
+            }
         }
 
         foreach ($dataTables as $table) {
-            $table->queueFilter(function($dataTable){
+            $table->queueFilter(function ($dataTable) {
                 $row = $dataTable->getRowFromLabel('Webgl');
                 if ($row) {
                     $row->setColumn('label', 'WebGL');
@@ -49,7 +50,7 @@ class DeviceFeatureWebGL extends Plugin
             });
         }
     }
-    
+
     public function isTrackerPlugin()
     {
         return true;
