@@ -1,13 +1,13 @@
 {
   "name": "DeviceFeatureWebGL",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "description": "This plugin allows you to track browser compatibility for WebGL",
   "keywords": ["webgl"],
   "license": "GPL v3+",
   "homepage": "http://github.com/sgiehl/piwik-plugin-DeviceFeatureWebGL",
   "require": {
-    "matomo": ">=5.0.0-b1,<6.0.0-b1",
-    "php": ">=7.2.5"
+    "matomo": ">=6.0.0-b1,<7.0.0-b1",
+    "php": ">=8.1.0"
   },
   "archive": {
     "exclude": [
